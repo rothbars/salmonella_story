@@ -6,6 +6,8 @@ Health Authority but my hope is that by showing this information in a more inter
 context that it will be more easily understood by health officials and policy
 makers within Oregon.
 
+The website can be accessed [here](https://rothbars.github.io/salmonellastory/)
+
 ## Storyline of the Map
 1. The story will begin by providing background details, definitions, and other
 necessary information to understand the *Salmonella* bacteria are and what it
@@ -28,4 +30,4 @@ and intervention efforts and how these may change in the future. In this section
 I also will introduce an important stakeholder in this research (the Oregon Health
 Authority). Much of the information presented here is based on their surveillance
 efforts and the more in-depth statistical analysis I hope to bring into the story
-map is based on data collected by this agency. 
+map is based on data collected by this agency.
