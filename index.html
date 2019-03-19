@@ -90,7 +90,7 @@
               considered the largest domestic bioterrorist attack in US history.  </p>
               <h3 class="text-center">Oregon's bizarre history of the Rajneeshee cult and bioterrorism</h3>
               <h5 class="text-center">(from <a href="https://www.oregonlive.com/rajneesh/page/post.html">The Oregonian</a>)</h5>
-              <video controls width="500px" class="embedded-photo img-responsive">
+              <video controls width="300px" class="embedded-photo img-responsive">
               <source src="assets/Rajneeshe.mp4" /></video>
             </section>
             <section data-scene="current" class="container-fluid">
@@ -112,6 +112,33 @@
                 increasing in Oregon. These include the Enteritidis and Typhimirium serotypes.</p>
                 <img src="img/PixSalmonella.jpg" class="img-responsive img-thumbnail" alt="responsive image"
                      alt-text="Salmonella bacteria">
+            </section>
+            <section data-scene="analysis" class="container-fluid">
+                <h2 class="text-center">Salmonellosis Analysis in Oregon</h2>
+                <br>
+                <p>Laboratory confirmed cases of <i>Salmonella</i> in Oregon between 2008-2017 were found in
+                  ORPHEUS containing various demographic and exposure information. These data were exported
+                  and analyzed in R Studio. Rates were calculated using annual population estimates from
+                  the Population Research Center at Portland State University.Centroid coordinates were
+                  calculated for Oregon polygon county data gathered from the Oregon Spatial Data Library.
+                  Incidence rate information was then attached to the centroid coordinate data to create a
+                  choropleth map and a k-means cluster map for cluster analysis using the “ggmap” package.</p>
+                <img src="img/OregonRegion.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="Incidence of Salmonella by Oregon Region">
+                <br><br>
+                <p>From the choropleth map of Oregon in 2017 hotspots in Yamhill and Malheur counties can be seen.
+                  Using a four-clustered k-means approach we can see the incidence of Salmonella is similar in
+                  rural eastern counties like Malheur and densely populated counties like Multnomah.</p>
+                <img src="img/Choropleth.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="Choropleth Map of Oregon">
+                <img src="img/Kmean.png" class="img-responsive img-thumbnail" alt="responsive image"
+                    alt-text="K-means Map of Oregon">
+                <p>Using clustering techniques public health officials can investigate links between similar
+                  disease incidence and similar risk factor exposure. For example, anecdotal evidence suggests
+                  an increased interest in urban/suburban “backyard” chicken farming as one potential link
+                  for the similar disease incidence patterns between the rural and more densely populated counties.
+                  Local and state health officials already analyze risk factor data in great detail, incorporating
+                  spatial patterns can provide further evidence for Salmonella sources.</p>
             </section>
             <section data-scene="future" class="container-fluid">
                 <h2 class="text-center">Expectations for the Future</h2>
@@ -239,6 +266,7 @@
         impact: {lat: 44.394005, lng: -121.469386, zoom: 7, layers: [layers.street_base, layers.counties], name: "impact"},
         history: {lat: 45.597193, lng: -121.172156, zoom: 12, layers: [layers.street_base, layers.counties], name: "history"},
         current: {lat: 44.394005, lng: -121.469386, zoom: 7, layers: [layers.street_base,layers.counties], name: "current"},
+        analysis: {lat: 44.394005, lng: -121.469386, zoom: 7, layers: [layers.street_base,layers.counties], name: "analysis"},
         future: {lat: 44.394005, lng: -121.469386, zoom: 7, layers: [layers.street_base, layers.counties], name: "future"},
         stakeholders: {lat: 45.535819, lng: -122.667451, zoom: 10, layers: [layers.street_base,layers.counties], name: "stakeholders"},
         end: {lat: 44.394005, lng: -121.469386, zoom: 7, layers: [layers.street_base, layers.counties], name: "end"}
